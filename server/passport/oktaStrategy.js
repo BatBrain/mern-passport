@@ -15,6 +15,7 @@ const strategy = new OktaStrategy({
   }, function(accessToken, refreshToken, profile, done) {
   
     return profile
+    console.log(profile)
   });
 
   module.exports = strategy
